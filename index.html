@@ -1,4 +1,121 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>SMDI TechInfoLabs</title>
-<link rel="stylesheet" href="assets/styles.css"></head>
-<body><h1>SMDI – TechInfoLabs</h1><p>Modern IT Services with AI Automation</p></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SMDI – TechInfoLabs</title>
+
+  <!-- ABSOLUTE paths to ensure GitHub Pages loads assets correctly -->
+  <link rel="stylesheet" href="/smditechinfolabs_v4/assets/styles.css">
+  <link rel="icon" href="/smditechinfolabs_v4/assets/favicon.png">
+  <meta name="description" content="SMDI – TechInfoLabs: AI-driven Intune, AVD and endpoint automation for SMBs." />
+</head>
+<body>
+  <header>
+    <div class="container hdr-inner">
+      <img src="/smditechinfolabs_v4/assets/logo.png" srcset="/smditechinfolabs_v4/assets/logo@2x.png 2x" alt="SMDI TechInfoLabs" class="logo" />
+      <div class="brand">
+        <h1>SMDI – TechInfoLabs</h1>
+        <p>Modern IT Services with AI Automation</p>
+      </div>
+      <nav>
+        <div class="nav-list">
+          <div class="nav-item">
+            <div class="nav-btn">Services ▾</div>
+            <div class="mega">
+              <div class="mega-grid">
+                <div>
+                  <strong>Endpoint Automation</strong>
+                  <div><a href="/smditechinfolabs_v4/services.html#autopilot">Autopilot & Onboarding</a></div>
+                  <div><a href="/smditechinfolabs_v4/services.html#patch">Patch & Compliance</a></div>
+                </div>
+                <div>
+                  <strong>AI Operations</strong>
+                  <div><a href="/smditechinfolabs_v4/automation.html#ai-l1">AI L1 Helpdesk</a></div>
+                  <div><a href="/smditechinfolabs_v4/automation.html#rca">RCA Automation</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="nav-btn" href="/smditechinfolabs_v4/about.html">About</a>
+          <a class="nav-btn" href="/smditechinfolabs_v4/pilot.html">Pilot</a>
+          <a class="nav-btn" href="/smditechinfolabs_v4/contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <span class="badge">AI • Intune • AVD</span>
+        <h2 class="reveal">Automated endpoint operations that reduce costs and accelerate IT</h2>
+        <p class="muted reveal">We combine Intune, AVD and AI automation to fix issues, remediate compliance and reduce manual tickets.</p>
+        <div style="margin-top:18px" class="reveal">
+          <a class="cta" href="/smditechinfolabs_v4/pilot.html">Request Pilot</a>
+          <a style="margin-left:12px" href="/smditechinfolabs_v4/contact.html">Talk to Sales</a>
+        </div>
+
+        <div class="services-grid reveal">
+          <div class="service" id="autopilot">
+            <h3>Autopilot & Onboarding</h3>
+            <p class="muted">Zero-touch provisioning, ESP automation and branding for a seamless user experience.</p>
+          </div>
+          <div class="service" id="ai-l1">
+            <h3>AI L1 Helpdesk</h3>
+            <p class="muted">Chatbot + automation runbooks for routine fixes — instant results and full audit trail.</p>
+          </div>
+          <div class="service" id="patch">
+            <h3>Patch & Compliance</h3>
+            <p class="muted">Scheduled patch automation, pre-checks and auto-heal to maintain compliance.</p>
+          </div>
+          <div class="service" id="avd">
+            <h3>AVD Health & Scale</h3>
+            <p class="muted">FSLogix repairs, session health and scaling decisions to optimize costs.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card reveal">
+        <h3>Pilot Snapshot</h3>
+        <p class="muted">14-day pilot • 10–25 devices • Automation + AI helpdesk • ROI report</p>
+        <ul class="muted">
+          <li>Avg auto-resolution: 70%</li>
+          <li>Pilot speed: 14 days</li>
+        </ul>
+        <div style="margin-top:12px"><a class="cta" href="/smditechinfolabs_v4/contact.html">Start Pilot</a></div>
+      </aside>
+    </section>
+
+    <section id="why" style="margin-top:28px">
+      <h2>Why choose us</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Automation-first</h3>
+          <p class="muted">We deliver automation playbooks before scaling human support.</p>
+        </div>
+        <div class="card">
+          <h3>Endpoint expertise</h3>
+          <p class="muted">15+ years in SCCM/OSD and endpoint automation.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="center">© SMDI – TechInfoLabs • <a href="/smditechinfolabs_v4/privacy.html">Privacy</a> • <a href="/smditechinfolabs_v4/terms.html">Terms</a></div>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      var revealEls = document.querySelectorAll('.reveal');
+      var obs = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting){ e.target.classList.add('show'); obs.unobserve(e.target); }
+        });
+      }, {threshold:0.12});
+      revealEls.forEach(function(el){ obs.observe(el); });
+    })();
+  </script>
+</body>
+</html>

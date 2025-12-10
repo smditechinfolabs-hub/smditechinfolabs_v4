@@ -3,119 +3,147 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SMDI – TechInfoLabs</title>
+  <title>SMDI – TechInfoLabs | Modern IT Services with AI Automation</title>
 
-  <!-- ABSOLUTE paths to ensure GitHub Pages loads assets correctly -->
+  <!-- Absolute paths for GitHub Pages: change repo name if different -->
   <link rel="stylesheet" href="/smditechinfolabs_v4/assets/styles.css">
   <link rel="icon" href="/smditechinfolabs_v4/assets/favicon.png">
-  <meta name="description" content="SMDI – TechInfoLabs: AI-driven Intune, AVD and endpoint automation for SMBs." />
+
+  <!-- Corporate font (clean, modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <meta name="description" content="SMDI – TechInfoLabs: AI-first Intune, AVD and endpoint automation for SMBs. Pilot, Managed Services, Automation playbooks." />
+
+  <!-- Small page-level overrides to guarantee the header/hero look like a large-corp site -->
+  <style>
+    :root{ --brand:#0f7136; --accent:#0b8a4a; --muted:#54606a; --bg:#ffffff; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+    body{margin:0;background:linear-gradient(180deg,#fbfdfb,#ffffff);}
+    .wrap{max-width:1200px;margin:0 auto;padding:18px}
+    header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:120}
+    .hdr-inner{display:flex;align-items:center;gap:22px;padding:18px 8px}
+    .logo{height:88px;width:auto;object-fit:contain}
+    .brand-block{display:flex;flex-direction:column;gap:6px}
+    .site-title{font-size:28px;color:var(--brand);margin:0;font-weight:700}
+    .site-sub{color:var(--muted);margin:0;font-size:14px}
+    nav{margin-left:auto}
+    .nav-list{display:flex;gap:12px;align-items:center}
+    .nav-link{font-weight:600;color:var(--muted);padding:10px 12px;border-radius:8px;text-decoration:none}
+    .nav-link:hover{color:var(--brand);background:rgba(15,113,54,0.04)}
+    .hero{display:flex;gap:36px;align-items:center;padding:36px 0}
+    .hero-left{flex:1}
+    .hero-head{font-size:36px;line-height:1.03;margin:8px 0;color:#0b2b21;font-weight:800}
+    .hero-p{color:var(--muted);font-size:16px;margin:12px 0 20px}
+    .hero-ctas{display:flex;gap:14px;align-items:center}
+    .btn-primary{background:var(--brand);color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:800}
+    .btn-ghost{color:var(--muted);font-weight:700}
+    .side-card{width:360px;background:linear-gradient(180deg,#f6fff6,#ffffff);padding:20px;border-radius:12px;box-shadow:0 18px 40px rgba(10,80,40,0.04)}
+    .services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:22px}
+    .service{background:#fff;border-radius:10px;padding:16px;border:1px solid #f0f6f0}
+    footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid #f0f4f0;margin-top:32px}
+
+    /* responsive */
+    @media(max-width:980px){
+      .hero{flex-direction:column}
+      .side-card{width:100%}
+      .nav-list{display:none}
+      .logo{height:72px}
+      .hero-head{font-size:28px}
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container hdr-inner">
+    <div class="wrap hdr-inner">
+      <!-- logo files in assets/ (replace placeholders with your real images) -->
       <img src="/smditechinfolabs_v4/assets/logo.png" srcset="/smditechinfolabs_v4/assets/logo@2x.png 2x" alt="SMDI TechInfoLabs" class="logo" />
-      <div class="brand">
-        <h1>SMDI – TechInfoLabs</h1>
-        <p>Modern IT Services with AI Automation</p>
+      <div class="brand-block">
+        <div class="site-title">SMDI – TechInfoLabs</div>
+        <div class="site-sub">Modern IT Services with AI Automation</div>
       </div>
+
       <nav>
         <div class="nav-list">
-          <div class="nav-item">
-            <div class="nav-btn">Services ▾</div>
-            <div class="mega">
-              <div class="mega-grid">
-                <div>
-                  <strong>Endpoint Automation</strong>
-                  <div><a href="/smditechinfolabs_v4/services.html#autopilot">Autopilot & Onboarding</a></div>
-                  <div><a href="/smditechinfolabs_v4/services.html#patch">Patch & Compliance</a></div>
-                </div>
-                <div>
-                  <strong>AI Operations</strong>
-                  <div><a href="/smditechinfolabs_v4/automation.html#ai-l1">AI L1 Helpdesk</a></div>
-                  <div><a href="/smditechinfolabs_v4/automation.html#rca">RCA Automation</a></div>
-                </div>
-              </div>
-            </div>
+          <div style="position:relative">
+            <a class="nav-link" href="/smditechinfolabs_v4/services.html">Services ▾</a>
           </div>
-          <a class="nav-btn" href="/smditechinfolabs_v4/about.html">About</a>
-          <a class="nav-btn" href="/smditechinfolabs_v4/pilot.html">Pilot</a>
-          <a class="nav-btn" href="/smditechinfolabs_v4/contact.html">Contact</a>
+          <a class="nav-link" href="/smditechinfolabs_v4/about.html">About</a>
+          <a class="nav-link" href="/smditechinfolabs_v4/pilot.html">Pilot</a>
+          <a class="nav-link" href="/smditechinfolabs_v4/contact.html">Contact</a>
+          <a class="nav-link" href="/smditechinfolabs_v4/privacy.html">Privacy</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main class="wrap">
     <section class="hero">
       <div class="hero-left">
-        <span class="badge">AI • Intune • AVD</span>
-        <h2 class="reveal">Automated endpoint operations that reduce costs and accelerate IT</h2>
-        <p class="muted reveal">We combine Intune, AVD and AI automation to fix issues, remediate compliance and reduce manual tickets.</p>
-        <div style="margin-top:18px" class="reveal">
-          <a class="cta" href="/smditechinfolabs_v4/pilot.html">Request Pilot</a>
-          <a style="margin-left:12px" href="/smditechinfolabs_v4/contact.html">Talk to Sales</a>
+        <div class="badge" style="display:inline-block;background:linear-gradient(90deg,var(--brand),var(--accent));color:#fff;padding:8px 12px;border-radius:999px;font-weight:800">AI • Intune • AVD</div>
+        <h1 class="hero-head">Reduce support cost with automation — AI-first endpoint operations for SMBs</h1>
+        <p class="hero-p">We build automated Intune + AVD operations that fix issues, remediate compliance, and manage patching — removing repetitive work and accelerating IT outcomes.</p>
+
+        <div class="hero-ctas">
+          <a class="btn-primary" href="/smditechinfolabs_v4/pilot.html">Request Pilot</a>
+          <a class="btn-ghost" href="/smditechinfolabs_v4/contact.html">Talk to Sales</a>
         </div>
 
-        <div class="services-grid reveal">
-          <div class="service" id="autopilot">
-            <h3>Autopilot & Onboarding</h3>
-            <p class="muted">Zero-touch provisioning, ESP automation and branding for a seamless user experience.</p>
+        <div class="services-grid">
+          <div class="service">
+            <h3 style="margin-top:6px">Autopilot & Device Onboarding</h3>
+            <p class="muted">Zero-touch provisioning, ESP health automation, branding and secure enrollment flows.</p>
           </div>
-          <div class="service" id="ai-l1">
-            <h3>AI L1 Helpdesk</h3>
-            <p class="muted">Chatbot + automation runbooks for routine fixes — instant results and full audit trail.</p>
+          <div class="service">
+            <h3 style="margin-top:6px">AI L1 Helpdesk</h3>
+            <p class="muted">Chatbot + automation runbooks for password resets, Teams & Office fixes, app reinstall and device sync.</p>
           </div>
-          <div class="service" id="patch">
-            <h3>Patch & Compliance</h3>
-            <p class="muted">Scheduled patch automation, pre-checks and auto-heal to maintain compliance.</p>
+          <div class="service">
+            <h3 style="margin-top:6px">Patch & Compliance Automation</h3>
+            <p class="muted">Pre-checks, auto-repair for patch failures, compliance healing, and scheduled remediation.</p>
           </div>
-          <div class="service" id="avd">
-            <h3>AVD Health & Scale</h3>
-            <p class="muted">FSLogix repairs, session health and scaling decisions to optimize costs.</p>
+          <div class="service">
+            <h3 style="margin-top:6px">AVD Health & Scaling</h3>
+            <p class="muted">FSLogix repair, session health recovery and cost optimization.</p>
           </div>
         </div>
       </div>
 
-      <aside class="card reveal">
+      <aside class="side-card">
         <h3>Pilot Snapshot</h3>
         <p class="muted">14-day pilot • 10–25 devices • Automation + AI helpdesk • ROI report</p>
-        <ul class="muted">
-          <li>Avg auto-resolution: 70%</li>
-          <li>Pilot speed: 14 days</li>
+        <ul class="muted" style="padding-left:18px">
+          <li>Average auto-resolution: 70%</li>
+          <li>Pilot speed: 14 days to measurable outcomes</li>
         </ul>
-        <div style="margin-top:12px"><a class="cta" href="/smditechinfolabs_v4/contact.html">Start Pilot</a></div>
+        <div style="margin-top:12px">
+          <a class="btn-primary" href="/smditechinfolabs_v4/contact.html">Start Pilot</a>
+        </div>
       </aside>
     </section>
 
-    <section id="why" style="margin-top:28px">
-      <h2>Why choose us</h2>
-      <div class="two-col">
-        <div class="card">
+    <section style="margin-top:28px">
+      <h2>Why SMDI – TechInfoLabs</h2>
+      <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:12px">
+        <div style="flex:1;min-width:220px" class="card">
           <h3>Automation-first</h3>
-          <p class="muted">We deliver automation playbooks before scaling human support.</p>
+          <p class="muted">Automation playbooks first; humans step in only for escalation.</p>
         </div>
-        <div class="card">
-          <h3>Endpoint expertise</h3>
-          <p class="muted">15+ years in SCCM/OSD and endpoint automation.</p>
+        <div style="flex:1;min-width:220px" class="card">
+          <h3>Deep endpoint experience</h3>
+          <p class="muted">15+ years in SCCM/OSD deployments—complex scenarios are our strength.</p>
+        </div>
+        <div style="flex:1;min-width:220px" class="card">
+          <h3>Secure by design</h3>
+          <p class="muted">Secrets in Key Vault, audit logs, and approval gating as standard.</p>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="center">© SMDI – TechInfoLabs • <a href="/smditechinfolabs_v4/privacy.html">Privacy</a> • <a href="/smditechinfolabs_v4/terms.html">Terms</a></div>
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-top:24px">
+        <div class="muted">© SMDI – TechInfoLabs. Modern IT Services with AI Automation.</div>
+        <div class="muted"><a href="/smditechinfolabs_v4/privacy.html">Privacy</a> • <a href="/smditechinfolabs_v4/terms.html">Terms</a> • <a href="/smditechinfolabs_v4/contact.html">Contact</a> • <a href="/smditechinfolabs_v4/pilot.html">Pilot</a></div>
+      </div>
     </footer>
   </main>
-
-  <script>
-    (function(){
-      var revealEls = document.querySelectorAll('.reveal');
-      var obs = new IntersectionObserver(function(entries){
-        entries.forEach(function(e){
-          if(e.isIntersecting){ e.target.classList.add('show'); obs.unobserve(e.target); }
-        });
-      }, {threshold:0.12});
-      revealEls.forEach(function(el){ obs.observe(el); });
-    })();
-  </script>
 </body>
 </html>
